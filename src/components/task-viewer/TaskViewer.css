@@ -1,0 +1,27 @@
+.task-viewer-container {
+  background-color: #f3f3fb;
+  border-radius: 50px;
+  padding: 40px 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.task-viewer-container::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.task-list-container {
+  padding: 0 40px;
+  flex: 1;
+  overflow: auto;
+}
+
+.task-list-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 290px);
+  grid-auto-rows: minmax(min-content, max-content);
+  justify-items: flex-start;
+  justify-content: space-between;
+  gap: 40px 40px;
+}
